@@ -57,6 +57,7 @@ class RecipesSerializer(serializers.ModelSerializer):
             "id",
             "recipe_title",
             "recipe_description",
-            "date_modified"
+            "date_modified",
+            "category"
         )
     

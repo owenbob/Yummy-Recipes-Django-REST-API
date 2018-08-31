@@ -5,6 +5,11 @@ from API.Category.views import (
     CategoriesCreateListAPIView,
     CategoriesRetrieveUpdateDestroyAPIView
 )
+
+from API.Recipe.view import (
+    RecipesCreateAPIView,
+    
+)
 from API.Auth.views import LoginView
 
 
@@ -30,5 +35,12 @@ urlpatterns = [
         'api/v1/auth/categories/<int:pk>', 
         CategoriesRetrieveUpdateDestroyAPIView.as_view(), 
         name='CategoriesRetrieveUpdateDestroy'
+    ),
+    path(
+        'api/v1/auth/recipes/<int:category_id>',
+        RecipesCreateAPIView.as_view(),
+        name='RecipesCreate'
+
     )
+    
 ]
