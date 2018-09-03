@@ -8,6 +8,8 @@ from API.Category.views import (
 
 from API.Recipe.view import (
     RecipesCreateAPIView,
+    RecipesListAPIView,
+    RecipeRetrieveUpdateDelete
     
 )
 from API.Auth.views import LoginView
@@ -41,6 +43,15 @@ urlpatterns = [
         RecipesCreateAPIView.as_view(),
         name='RecipesCreate'
 
+    ),
+    path(
+        'api/v1/auth/recipes/',
+        RecipesListAPIView.as_view(),
+        name='RecipesList'
+    ),
+    path(
+        'api/v1/auth/recipe/<int:recipe_id>',
+        RecipeRetrieveUpdateDelete.as_view(),
+        name='RecipeRetrieveUpdateDelete'
     )
-    
 ]

@@ -26,7 +26,9 @@ class Recipes(models.Model):
     recipe_title = models.CharField(max_length=30)
     recipe_description = models.CharField(max_length=1000)
     date_modified = models.DateField(auto_now=True)
+    created_by_user = models.IntegerField(default=None)
     category = models.ForeignKey('Categories', on_delete=models.CASCADE)
+    
 
     def __str__(self):
             return ("{}".format(self.recipe_title))
