@@ -38,6 +38,7 @@ class TestModels(TestCase):
         r = Recipes(
             recipe_title="My recipe",
             recipe_description="My recipe description",
+            created_by_user=1,
             category=Categories.objects.get(
                 category_title="My category",
                 category_description="My category description"
