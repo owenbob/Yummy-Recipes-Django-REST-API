@@ -1,0 +1,19 @@
+language: python
+python:
+  - "3.6"
+
+services:
+  - postgresql
+
+addons:
+  postgresql: "9.4"
+
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+
+# command to run tests
+before_script:
+  - cd YummyRecipes/
+
+script: coverage run  --source='.' manage.py test
