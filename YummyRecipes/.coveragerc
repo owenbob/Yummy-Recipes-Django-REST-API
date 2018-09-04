@@ -1,0 +1,30 @@
+# .coveragerc
+[run]
+omit =
+    # omit all __init__.py files
+    *__init__.py*
+
+    # omit all files in API/migrations
+    API/migrations/*
+
+
+    # omit all files in API/tests
+    API/tests*
+
+    # omit all file in YummyRecipes folder
+    YummyRecipes/*
+
+    # omit manage.py file
+    manage.py
+
+    # omit API/app.py file
+    API/apps.py
+
+    #omit API/admin.py file
+    API/admin.py
+
+    # omit mixins file
+    API/Category/mixins.py
+
+
+    
