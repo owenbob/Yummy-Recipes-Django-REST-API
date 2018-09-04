@@ -16,4 +16,9 @@ install:
 before_script:
   - cd YummyRecipes/
 
-script: coverage run  --source='.' manage.py test
+script: 
+  - coverage run  --source='.' manage.py test
+  - coverage report
+
+after_success:
+  - coveralls
