@@ -1,7 +1,6 @@
 # Yummy-Recipes-Django-REST-API
 
 [![Build Status](https://travis-ci.org/owenbob/Yummy-Recipes-Django-REST-API.svg?branch=master)](https://travis-ci.org/owenbob/Yummy-Recipes-Django-REST-API)
-
 [![Coverage Status](https://coveralls.io/repos/github/owenbob/Yummy-Recipes-Django-REST-API/badge.svg)](https://coveralls.io/github/owenbob/Yummy-Recipes-Django-REST-API)
 
 
