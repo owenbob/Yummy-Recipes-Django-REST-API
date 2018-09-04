@@ -1,5 +1,7 @@
 # Yummy-Recipes-Django-REST-API
 
+[![Build Status](https://travis-ci.org/owenbob/Yummy-Recipes-Django-REST-API.svg?branch=master)](https://travis-ci.org/owenbob/Yummy-Recipes-Django-REST-API)
+
 
 ## Product overview 
  Yummy-Recipes-Django-REST-API is a simple  API built with  Django and Django Rest Framework.  Enables you to register a user,login. It aslo provides CRUD functionality for categories and recipes assigned to these categories. 
